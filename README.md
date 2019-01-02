@@ -1,5 +1,4 @@
-git clone https://github.com/sandhyasajith/tbchain.git
-
+git clone https://github.com/abhijithsmtpvm/TB-chain2.git
 cd tbDotsClient
 
 npm install
