@@ -1,0 +1,32 @@
+<div class="signup">
+    <div class="form">
+        <tr>
+            <td>
+                <label for="lblmobNum">Mobile Number</label>
+            </td>
+            <td>
+                <input [(ngModel)]="mobNum" name="mobNum" type="text" maxlength="6" style="width: 300px;" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="lblmedid">Medicine Id</label>
+            </td>
+            <td>
+                <input [(ngModel)]="medid" name="medid" type="text" maxlength="60" style="width: 300px;" />
+            </td>
+        </tr>
+
+        <div>
+        <tr>
+            <label id="lblName">{{errorMsg}}</label>
+        </tr>
+        </div>
+        <br>
+        <div id="buttonDiv">
+            <button class="buttonClass" (click)="intakeSubmit($event)">Submit</button>
+        <br>
+
+            
+        </div>
+        

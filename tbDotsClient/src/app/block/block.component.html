@@ -1,0 +1,51 @@
+<div class="block">
+    <div class="form">
+
+
+        <tr>
+            <td>
+                <label for="lblUserName">User Name</label>
+            </td>
+            <td>
+                <input [(ngModel)]="myUserName" name="myUserName" type="text" maxlength="60" style="width: 300px;" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="lblPassword">Password</label>
+            </td>
+            <td>
+                <input [(ngModel)]="myPassword" name="myPassword" type="password" maxlength="60" style="width: 300px;" />
+            </td>
+        </tr>
+        <td>
+            <button (click)="generateOTP($event)">Generate OTP</button>
+        </td>
+        <td>
+            <input [(ngModel)]="defaultOTP" name="defOTP" type="text" maxlength="60" style="width: 300px;" />
+        </td>
+        <tr>
+            <td>
+                <label for="lblOTP">OTP</label>
+            </td>
+            <td>
+                <input [(ngModel)]="inputOTP" name="inOTP" type="number" maxlength="60" style="width: 300px;" />
+            </td>
+        </tr>
+        
+        <div id="buttonDiv">
+            <button class="buttonClass" (click)="login($event)">Login</button>
+            <button class="buttonClass" (click)="signup()">Sign Up</button>
+            <div>
+                
+            
+
+            </div>
+            <div>
+                <tr>
+                <label id="lblName">
+                    {{errorMsg}}
+                </label>
+            </tr>
+            </div>
+        </div>
